@@ -30,7 +30,7 @@ export const Button = styled.button`
   }
 
   @media (max-width: 768px) {
-    font-size: 0.75rem;
-    width: 90px;
+    font-size: 0.725rem;
+    width: 95px;
   }
 `;

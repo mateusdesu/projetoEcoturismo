@@ -35,11 +35,3 @@ export const Image = styled.img`
   
   
 `;
-
-export const ImageTitle = styled.h2`
-    color:black;
-    font-size: 1.75rem;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 22px;
-`
