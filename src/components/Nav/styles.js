@@ -5,30 +5,32 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  padding-top: 10px;
-
+  padding: 10px 4px;
 `;
 
 export const Button = styled.button`
-    color: #4A4DA3;
-    width: 120px;
-    height: 30px;
-    border: none;
-    border-radius: 1rem;
-    font-size: 1rem;
-    background-color: #FFFFFF;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
+  color: #4a4da3;
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  &:visited,&:link {
+    text-decoration: none;
+  }
 
-    &:hover{
-        background-color: #4A4DA3;
-        color: #fff;
-        cursor: pointer;
-    }
+  &:hover {
+    background-color: #4a4da3;
+    color: #fff;
+    cursor: pointer;
+  }
 
-    @media (max-width: 768px) {
-        font-size: 0.78rem;
-    }
-
-`
+  @media (max-width: 768px) {
+    font-size: 0.75rem;
+    width: 90px;
+  }
+`;

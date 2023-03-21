@@ -1,12 +1,14 @@
 import { Container, Button } from "./styles";
+import { Link } from "react-router-dom";
 
 export function Nav() {
   return (
     <Container>
-      <Button>Sobre Arraial</Button>
-      <Button>Destinos</Button>
-      <Button>Sensibilização</Button>
-      <Button>Quiz</Button>
+      <Link to={"/"}><Button>Sobre Arraial</Button></Link>
+      <Link to={"/destinos"}><Button>Destinos</Button></Link>
+      <Link><Button>Sensibilização</Button></Link>
+      <Link><Button>Quiz</Button></Link>
+      
     </Container>
   );
 }

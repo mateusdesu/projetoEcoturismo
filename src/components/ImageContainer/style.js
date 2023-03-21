@@ -19,9 +19,10 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 800px;
+  width: 400px;
   height: 420px;
   border-radius: 12px;
+  
   
   &:hover{
     cursor: pointer;
