@@ -3,18 +3,25 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: row;
   padding: 10px 4px;
+  overflow-x:auto;
+  height: 60px;
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    
+  }
 `;
 
 export const Button = styled.button`
   color: #4a4da3;
-  width: 120px;
+  width: 150px;
   height: 30px;
   border: none;
   border-radius: 1rem;
-  font-size: 1rem;
+  font-size: 1/25rem;
   background-color: #ffffff;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
@@ -31,6 +38,8 @@ export const Button = styled.button`
 
   @media (max-width: 768px) {
     font-size: 0.725rem;
-    width: 95px;
+    width: 120px;
+    justify-content: flex-start;
+    
   }
 `;
