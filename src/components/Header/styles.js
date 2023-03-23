@@ -4,10 +4,11 @@ export const Container = styled.div`
     padding: 1rem;
     background-color: #4A4DA3;
     display:flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     flex-direction: row;
     color: black;
+    height: 60px;
     
 `
 

@@ -29,7 +29,7 @@ export const Image = styled.img`
   }
 
   @media(max-width:768px){
-    width: 320px;
+    width: 300px;
     height: 450px;
   }
   

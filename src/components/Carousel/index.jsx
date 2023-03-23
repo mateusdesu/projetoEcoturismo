@@ -5,7 +5,7 @@ import { TitleText } from "../../components/TitleText";
 
 function UncontrolledExample() {
   return (
-    <Carousel>
+    <Carousel variant="dark">
       <Carousel.Item>
         <ImageContainer
           src="https://i.pinimg.com/564x/8f/2b/48/8f2b48a91333bda21c0833c00ec58861.jpg"
