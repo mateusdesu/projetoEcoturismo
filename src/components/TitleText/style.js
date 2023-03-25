@@ -8,6 +8,7 @@ export const TextContainer = styled.div`
 `;
 export const Text = styled.h2`
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
+  font-weight:bold;
 `;

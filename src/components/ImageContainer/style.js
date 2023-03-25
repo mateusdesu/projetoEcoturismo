@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-items: auto;
   align-items: center;
   width: 80%;
-  height: 70vh;
+  height: 420px;
   padding: 0.5rem;
   margin: 0 auto;
   margin-top: 16px;
@@ -13,8 +13,8 @@ export const Container = styled.div`
   
 
   @media(max-width:768px){
-    width: 320px;
-    height: 450px;
+    width: 315px;
+    height: 430px;
   }
 `;
 

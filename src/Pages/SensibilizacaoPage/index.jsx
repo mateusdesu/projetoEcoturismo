@@ -1,19 +1,19 @@
 import { Header } from "../../components/Header";
-import { Nav1 } from "../../components/Nav";
+import { Nav3 } from "../../components/Nav";
 import { ImageContainer } from "../../components/ImageContainer";
 import {TitleText} from "../../components/TitleText"
 import { Wrapper } from "../../components/Wrapper/style";
 
-export const MainPage = () => {
+export const SensibilizacaoPage = () => {
   return (
     <Wrapper>
       <Header />
-      <Nav1 />
+      <Nav3 />
       <ImageContainer
         title="Sobre Arraial do Cabo"
-        src="https://i.pinimg.com/564x/07/a3/de/07a3ded6c6e37707c23b370b9204814b.jpg"
+        src="https://i.imgur.com/vYB7AIM.png"
       />
-      <TitleText title ="Sobre Arraial"/>
+      <TitleText title ="Ecoturismo consciente"/>
     </Wrapper>
   );
 };

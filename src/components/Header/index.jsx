@@ -1,13 +1,20 @@
-import { Container, Title } from "./styles";
-import { BsThreeDots, BsFillMapFill,BsJustifyLeft,BsSignpost2 } from "react-icons/bs";
+import { Container, Title,StyledLink,LinkContainer } from "./styles";
+import {Link} from "react-router-dom";
+
 import { FaMapMarkedAlt,FaBars} from "react-icons/fa"
 
 export function Header() {
   return (
     <Container>
-      <FaBars size={"1.5em"} cursor={"pointer"} color={"white"}/>
+      <LinkContainer>
+      <StyledLink to={"/"}><FaBars size={"1.5em"} cursor={"pointer"} color={"white"}/></StyledLink>
+      </LinkContainer>
       <Title>Arraial do Cabo</Title>
-      <FaMapMarkedAlt size={"1.5em"} cursor={"pointer"} color={"white"}/>
+     <LinkContainer>
+     <StyledLink to={"/mapa"}>
+     <FaMapMarkedAlt size={"1.6em"} cursor={"pointer"} color={"white"}/>
+     </StyledLink>
+     </LinkContainer>
     </Container>
   );
 }
