@@ -12,7 +12,7 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     justify-content: space-between;
     padding: 4px;
-    margin-top: 4px;
+    margin: 0 4px;
     
   }
 `;
