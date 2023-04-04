@@ -7,15 +7,9 @@ export const MapPage = () => {
   return (
     <Container>
       <Header>
-<<<<<<< HEAD
         <FaAngleLeft cursor={"pointer"} size={"1.8em"}/>
         <HeaderText>Mapa da Região</HeaderText>
         <FaRegCompass cursor={"pointer"} size={"1.8em"}/>
-=======
-        <FaAngleLeft cursor={"pointer"} size={"1.5em"}/>
-        <HeaderText>Mapa da Região</HeaderText>
-        <FaRegCompass cursor={"pointer"} size={"1.5em"}/>
->>>>>>> 0f72b05adedb2b47684f3bddba9efbe46891b399
       </Header>
       <MapContainer>
           <MapImage src="https://placehold.co/750x600"/>
