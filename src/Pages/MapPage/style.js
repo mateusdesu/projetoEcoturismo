@@ -6,7 +6,11 @@ export const Header = styled.div`
   justify-content: space-between;
   flex-direction: row;
   background-color: lightgray;
+<<<<<<< HEAD
   height: 50px;
+=======
+  height: 40px;
+>>>>>>> 0f72b05adedb2b47684f3bddba9efbe46891b399
   margin: 0 4px 0 4px;
   border-radius: 8px;
   padding: 8px;
@@ -27,13 +31,21 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding:4px;
+<<<<<<< HEAD
   background-color: #4a4da3;
+=======
+  background-color: skyblue;
+>>>>>>> 0f72b05adedb2b47684f3bddba9efbe46891b399
   width:100%;
   height:100vh;
 `;
 
 export const HeaderText = styled.h1`
+<<<<<<< HEAD
   font-size: 24px;
+=======
+  font-size: 18px;
+>>>>>>> 0f72b05adedb2b47684f3bddba9efbe46891b399
   font-weight: bold;
 `;
 export const InfoContainer = styled.div`
@@ -45,7 +57,10 @@ export const InfoContainer = styled.div`
   border-radius: 16px;
   padding: 8px;
   margin: 0 4px;
+<<<<<<< HEAD
   height: 47%;
+=======
+>>>>>>> 0f72b05adedb2b47684f3bddba9efbe46891b399
 `;
 
 export const Bar = styled.div`
