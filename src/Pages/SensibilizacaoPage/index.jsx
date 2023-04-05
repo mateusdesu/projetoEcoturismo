@@ -3,7 +3,7 @@ import { Nav3 } from "../../components/Nav";
 import { ImageContainer } from "../../components/ImageContainer";
 import {TitleText} from "../../components/TitleText"
 import { Wrapper } from "../../components/Wrapper/style";
-import image from "../../assets/images/sensibilizacao.png";
+import image from "../../assets/images/Sensibilizacao.png";
 
 export const SensibilizacaoPage = () => {
   return (
