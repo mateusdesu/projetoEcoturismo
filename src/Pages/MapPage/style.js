@@ -22,6 +22,10 @@ export const MapContainer = styled.div`
 export const MapImage = styled.img`
   height: 280px;
   width: auto;
+  @media (max-width: 768px) {
+    width: 100%;
+    
+  }
 `;
 
 export const Container = styled.div`
