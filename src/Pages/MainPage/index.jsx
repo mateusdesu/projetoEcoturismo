@@ -3,6 +3,7 @@ import { Nav1 } from "../../components/Nav";
 import { ImageContainer } from "../../components/ImageContainer";
 import {TitleText} from "../../components/TitleText"
 import { Wrapper } from "../../components/Wrapper/style";
+import image from "../../assets/images/SobreArraial.png";
 
 export const MainPage = () => {
   return (
@@ -11,7 +12,7 @@ export const MainPage = () => {
       <Nav1 />
       <ImageContainer
         title="Sobre Arraial do Cabo"
-        src="https://i.pinimg.com/564x/07/a3/de/07a3ded6c6e37707c23b370b9204814b.jpg"
+        src={image}
       />
       <TitleText title ="Sobre Arraial"/>
     </Wrapper>

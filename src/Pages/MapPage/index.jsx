@@ -1,6 +1,7 @@
 import { Wrapper } from "../../components/Wrapper/style";
 import { Header, MapContainer,Container, MapImage, HeaderText, InfoContainer, Bar, ListContainer, ListItem,ListText, ListBar } from "./style";
 import { FaAngleLeft, FaRegCompass,FaUmbrellaBeach } from "react-icons/fa";
+import image from "../../assets/images/Map.png";
 
 
 export const MapPage = () => {
@@ -12,7 +13,7 @@ export const MapPage = () => {
         <FaRegCompass cursor={"pointer"} size={"1.8em"}/>
       </Header>
       <MapContainer>
-          <MapImage src="https://placehold.co/750x600"/>
+          <MapImage src={image}/>
       </MapContainer>
       <InfoContainer>
       <Bar/>

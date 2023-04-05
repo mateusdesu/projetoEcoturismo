@@ -5,24 +5,23 @@ export const Header = styled.div`
   align-items: base-line;
   justify-content: space-between;
   flex-direction: row;
-  background-color: lightgray;
-<<<<<<< HEAD
+  background-color: #E7E7E7D1;
   height: 50px;
-=======
-  height: 40px;
->>>>>>> 0f72b05adedb2b47684f3bddba9efbe46891b399
   margin: 0 4px 0 4px;
   border-radius: 8px;
   padding: 8px;
 `;
 export const MapContainer = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  margin:auto;
 `;
 
 export const MapImage = styled.img`
-  padding: 8px;
-  height: 300px;
-  width: 100%;
+  height: 280px;
+  width: auto;
 `;
 
 export const Container = styled.div`
@@ -31,21 +30,13 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding:4px;
-<<<<<<< HEAD
-  background-color: #4a4da3;
-=======
-  background-color: skyblue;
->>>>>>> 0f72b05adedb2b47684f3bddba9efbe46891b399
+  background-color: #A6BBDE99;
   width:100%;
   height:100vh;
 `;
 
 export const HeaderText = styled.h1`
-<<<<<<< HEAD
   font-size: 24px;
-=======
-  font-size: 18px;
->>>>>>> 0f72b05adedb2b47684f3bddba9efbe46891b399
   font-weight: bold;
 `;
 export const InfoContainer = styled.div`
@@ -53,20 +44,17 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: lightgray;
+  background-color: #E7E7E7D1;
   border-radius: 16px;
   padding: 8px;
   margin: 0 4px;
-<<<<<<< HEAD
   height: 47%;
-=======
->>>>>>> 0f72b05adedb2b47684f3bddba9efbe46891b399
 `;
 
 export const Bar = styled.div`
-  background-color: black;
+  background-color: #1E1E1E99;
   width: 150px;
-  height: 16px;
+  height: 12px;
   border-radius: 50px;
 `;
 
