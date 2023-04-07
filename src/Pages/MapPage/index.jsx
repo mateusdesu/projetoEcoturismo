@@ -1,16 +1,17 @@
-import { Wrapper } from "../../components/Wrapper/style";
 import { Header, MapContainer,Container, MapImage, HeaderText, InfoContainer, Bar, ListContainer, ListItem,ListText, ListBar } from "./style";
 import { FaAngleLeft, FaRegCompass,FaUmbrellaBeach } from "react-icons/fa";
 import image from "../../assets/images/Map.png";
+import { useNavigate } from "react-router-dom";
 
 
 export const MapPage = () => {
+    const navigate = useNavigate()
   return (
     <Container>
       <Header>
-        <FaAngleLeft cursor={"pointer"} size={"1.8em"}/>
+        <FaAngleLeft cursor={"pointer"} size={"2em"} onClick={() => navigate(-1)}/>
         <HeaderText>Mapa da Região</HeaderText>
-        <FaRegCompass cursor={"pointer"} size={"1.8em"}/>
+        <FaRegCompass cursor={"pointer"} size={"2em"}/>
       </Header>
       <MapContainer>
           <MapImage src={image}/>

@@ -1,10 +1,10 @@
-import styled, { keyframes } from "styled-components";
-import logo from "../../assets/icons/logo2.png";
+import styled from "styled-components";
+import logo from "../../assets/icons/logo_circulo.png";
 
 const LoadingContainer = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #4a4da3;
+  background-color: #fff;
   position: fixed;
   display: flex;
   gap: 50px;
@@ -17,9 +17,7 @@ const LoadingImage = styled.img`
   align-items: center;
   justify-content: center;
   width: 300px;
-  height: 300px;
-  background-color: #f4f4f4;
-  border-radius: 100%;
+  height: 400px;
 `;
 
 export const Loading = () => {

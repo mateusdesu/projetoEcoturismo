@@ -17,6 +17,7 @@ export const MapContainer = styled.div`
   justify-content: center;
   padding: 4px;
   margin:auto;
+  margin-top: 12px;
 `;
 
 export const MapImage = styled.img`
@@ -24,6 +25,7 @@ export const MapImage = styled.img`
   width: auto;
   @media (max-width: 768px) {
     width: 100%;
+    height: 240px;
     
   }
 `;
@@ -51,7 +53,7 @@ export const InfoContainer = styled.div`
   background-color: #E7E7E7D1;
   border-radius: 16px;
   padding: 8px;
-  margin: 0 4px;
+  margin: 12px 4px 0 4px;
   height: 47%;
 `;
 
@@ -69,15 +71,19 @@ export const ListContainer = styled.div`
   justify-content: center;
   padding: 8px;
   margin-top: 8px;
+
+  @media(min-width: 768px){
+    width: 800px;
+    letter-spacing: 1px;
+  }
 `;
 
 export const ListItem = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 4px;
   padding: 4px 0 0 0;
   justify-content: center;
-  align-items: base-line;
+  align-items: baseline;
 `;
 
 export const ListText = styled.h3`
