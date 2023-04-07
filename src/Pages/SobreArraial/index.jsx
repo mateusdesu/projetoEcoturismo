@@ -10,7 +10,7 @@ import {
 } from "./style";
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import image from "../../assets/images/sobreArraialDesc.png";
+import image from "../../assets/images/SobreArraialDesc.png";
 
 export const SobreArraial = () => {
   const navigate = useNavigate();
