@@ -18,7 +18,7 @@ export const SobreArraial = () => {
   return (
     <Container>
       <Header>
-        <FaAngleLeft size={"2em"} onClick={() => navigate(-1)} />
+        <FaAngleLeft size={"2em"}  cursor={"pointer"} onClick={() => navigate(-1)} />
       </Header>
       <ImageContainer>
         <Image src={image} />

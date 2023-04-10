@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Header = styled.div`
   display: flex;
-  align-items: base-line;
+  align-items: baseline;
   justify-content: flex-start;
   flex-direction: row;
   background-color: #E7E7E7D1;
@@ -10,6 +10,7 @@ export const Header = styled.div`
   margin: 0 4px 0 4px;
   border-radius: 8px;
   padding: 8px;
+  width: 100%;
 `;
 export const ImageContainer = styled.div`
   display: flex;
