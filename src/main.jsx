@@ -9,6 +9,7 @@ import { SensibilizacaoPage } from "./Pages/SensibilizacaoPage";
 import { Loading } from "./components/Loading";
 import { UnicariocaLoading} from "./components/UnicariocaLoading"
 import { SobreArraial } from "./Pages/SobreArraial";
+import { QuizPage } from "./Pages/QuizPage";
 
 import { useState } from "react";
 
@@ -31,7 +32,9 @@ const router = createBrowserRouter([
   },{
     path: "/sobre-arraial",
     element: <SobreArraial />
-  }
+  },
+  {path: "/quiz",
+   element: <QuizPage />},
 ]);
 
 export const Routes = () => {

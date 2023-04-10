@@ -8,7 +8,7 @@ export function Nav1() {
       <Link to={"/"}><NavButtonActive title={"Sobre Arraial"}></NavButtonActive></Link>
       <Link to={"/destinos"}><NavButton title={"Destinos"}></NavButton></Link>
       <Link to={"/sensibilizacao"}><NavButton title={"Sensibilização"}></NavButton></Link>
-      <Link to={"/"}><NavButton title={"Quiz"}></NavButton></Link>
+      <Link to={"/quiz"}><NavButton title={"Quiz"}></NavButton></Link>
       
     </Container>
   );
@@ -19,7 +19,7 @@ export function Nav2() {
       <Link to={"/"}><NavButton title={"Sobre Arraial"}></NavButton></Link>
       <Link to={"/destinos"}><NavButtonActive title={"Destinos"}></NavButtonActive></Link>
       <Link to={"/sensibilizacao"}><NavButton title={"Sensibilização"}></NavButton></Link>
-      <Link to={"/"}><NavButton title={"Quiz"}></NavButton></Link>
+      <Link to={"/quiz"}><NavButton title={"Quiz"}></NavButton></Link>
       
     </Container>
   );
@@ -30,7 +30,7 @@ export function Nav3() {
       <Link to={"/"}><NavButton title={"Sobre Arraial"}></NavButton></Link>
       <Link to={"/destinos"}><NavButton title={"Destinos"}></NavButton></Link>
       <Link to={"/sensibilizacao"}><NavButtonActive title={"Sensibilização"}></NavButtonActive></Link>
-      <Link to={"/"}><NavButton title={"Quiz"}></NavButton></Link>
+      <Link to={"/quiz"}><NavButton title={"Quiz"}></NavButton></Link>
       
     </Container>
   );
@@ -41,7 +41,7 @@ export function Nav4() {
       <Link to={"/"}><NavButton title={"Sobre Arraial"}></NavButton></Link>
       <Link to={"/destinos"}><NavButton title={"Destinos"}></NavButton></Link>
       <Link to={"/sensibilizacao"}><NavButton title={"Sensibilização"}></NavButton></Link>
-      <Link to={"/"}><NavButtonActive title={"Quiz"}></NavButtonActive></Link>
+      <Link to={"/quiz"}><NavButtonActive title={"Quiz"}></NavButtonActive></Link>
       
     </Container>
   );

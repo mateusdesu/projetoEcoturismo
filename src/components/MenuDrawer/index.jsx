@@ -25,7 +25,7 @@ export const MenuDrawer = (props) => {
 
   return (
     <Drawer open={open}>
-      <CloseButton onClick={onClose}><FaTimesCircle size={"2em"} color='red'/></CloseButton>
+      <CloseButton onClick={onClose}><FaTimesCircle size={"2em"} color='#4a4da3'/></CloseButton>
       {/* Adicione o conteúdo do menu drawer aqui */}
     </Drawer>
   );
