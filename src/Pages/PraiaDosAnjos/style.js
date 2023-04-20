@@ -20,12 +20,11 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 350px;
+  height: 320px;
   width: 450px;
   @media (max-width: 768px) {
     width: 100%;
-    height: 240px;
-    
+    height: 220px;
     
   }
 `;
@@ -49,7 +48,7 @@ export const InfoContainer = styled.div`
   background-color: #E7E7E7D1;
   border-radius: 16px;
   padding: 8px;
-  height: 55%;
+  height: 60%;
 
   
 `;
@@ -59,28 +58,28 @@ export const Bar = styled.div`
   width: 150px;
   height: 12px;
   border-radius: 50px;
-  
 `;
 
-export const Title = styled.h2`{
-  font-size: 22px;
+export const Title = styled.h2`
+  font-size: 20px;
   font-weight: bold;
   text-align: flex-start;
   margin-top: 8px;
 
   @media (min-width: 768px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 `
 
 export const Description = styled.p`
   font-size: 18px;
-  line-height: 24px;
+  line-height: 20px;
+  overflow-y: auto;
   text-align: justify;
   padding: 8px;
 
   @media (min-width: 768px) {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 20px;
   }
   `

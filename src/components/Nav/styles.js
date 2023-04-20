@@ -2,12 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  align-items: base-line;
+  align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  padding: 10px 4px;
+  padding: 0;
   overflow-x:auto;
   height: 60px;
+  ::-webkit-scrollbar-thumb{
+    background-color: #4a4da3;
+  }
 
   @media (max-width: 768px) {
     justify-content: space-between;

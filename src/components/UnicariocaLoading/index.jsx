@@ -19,7 +19,7 @@ const UniDiv = styled.div`
 
 const Image = styled.img`
   width: 300px;
-  height: 300px;
+  height: 280px;
 
   @media (max-width: 768px) {
     width: 180px;
@@ -31,12 +31,12 @@ const Image = styled.img`
 `
 const Image2 = styled.img`
   width: 300px;
-  height: 180px;
+  height: 150px;
 
   @media (max-width: 768px) {
     margin-top:32px;
     width: 200px;
-    height: 100px;
+    height: 85px;
     
   }
 

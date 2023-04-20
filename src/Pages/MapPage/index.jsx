@@ -1,6 +1,6 @@
 import { Header, MapContainer,Container, MapImage, HeaderText, InfoContainer, Bar, ListContainer, ListItem,ListText, ListBar } from "./style";
 import { FaAngleLeft, FaRegCompass,FaUmbrellaBeach } from "react-icons/fa";
-import image from "../../assets/images/Map.png";
+import image from "../../assets/images/Map2.png";
 import { useNavigate } from "react-router-dom";
 
 

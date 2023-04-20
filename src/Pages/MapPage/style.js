@@ -17,7 +17,7 @@ export const MapContainer = styled.div`
   justify-content: center;
   padding: 4px;
   margin:auto;
-  margin-top: 12px;
+  margin-top: 8px;
 `;
 
 export const MapImage = styled.img`
@@ -25,7 +25,7 @@ export const MapImage = styled.img`
   width: auto;
   @media (max-width: 768px) {
     width: 100%;
-    height: 240px;
+    height: 220px;
     
   }
 `;
@@ -54,7 +54,7 @@ export const InfoContainer = styled.div`
   border-radius: 16px;
   padding: 8px;
   margin: 12px 4px 0 4px;
-  height: 47%;
+  height: 48%;
 `;
 
 export const Bar = styled.div`

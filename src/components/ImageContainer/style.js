@@ -5,23 +5,24 @@ export const Container = styled.div`
   justify-items: auto;
   align-items: center;
   width: 80%;
-  height: 420px;
+  height: 400px;
   padding: 0.5rem;
   margin: 0 auto;
-  margin-top: 16px;
+  margin-top: 2rem;
   flex-direction: column;
   
 
   @media(max-width:768px){
     width: 315px;
-    height: 430px;
+    height: 400px;
   }
 `;
 
 export const Image = styled.img`
-  width: 400px;
-  height: 420px;
+  width: 360px;
+  height: 400px;
   border-radius: 12px;
+  
   
   
   &:hover{
@@ -29,7 +30,7 @@ export const Image = styled.img`
   }
 
   @media(max-width:768px){
-    width: 300px;
+    width: 280px;
     height: 450px;
   }
   

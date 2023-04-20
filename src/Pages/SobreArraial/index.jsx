@@ -27,7 +27,7 @@ export const SobreArraial = () => {
         <Bar />
         <Title>Arraial do Cabo</Title>
         <Description>
-          Esta situado na Região dos Lagos do estado do Rio de Janeiro. Trata-se
+          Está situado na Região dos Lagos do estado do Rio de Janeiro. Trata-se
           de uma cidade costeira, possuindo uma altitude média de apenas oito
           metros. Fundada em 1503 pelo conquistador Américo Vespúcio, foi
           elevada à categoria de município apenas em 1985, após sua emancipação

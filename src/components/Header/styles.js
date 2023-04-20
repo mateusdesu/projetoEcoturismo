@@ -9,7 +9,7 @@ export const Container = styled.div`
   justify-content: space-between;
   flex-direction: row;
   color: black;
-  height: 60px;
+  height: 55px;
 `;
 
 export const Title = styled.h1`
