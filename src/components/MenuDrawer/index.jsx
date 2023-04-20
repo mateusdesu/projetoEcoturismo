@@ -62,7 +62,7 @@ export const MenuDrawer = (props) => {
        <Link to = "https://www.youtube.com/watch?v=MjQpjg6Wg18&ab_channel=Vin%C3%ADciusPereira">
        <MenuItem>Linguagem local</MenuItem>
        </Link>
-       <Link to = "./desenvolvedores">
+       <Link to = "../desenvolvedores">
        <MenuItem>Desenvolvedores</MenuItem>
        </Link>
       </MenuList>
