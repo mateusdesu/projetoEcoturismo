@@ -1,60 +1,75 @@
-import { Header, MapContainer,Container, MapImage, HeaderText, InfoContainer, Bar, ListContainer, ListItem,ListText, ListBar } from "./style";
-import { FaAngleLeft, FaRegCompass,FaUmbrellaBeach } from "react-icons/fa";
+import {
+  Header,
+  MapContainer,
+  Container,
+  MapImage,
+  HeaderText,
+  InfoContainer,
+  Bar,
+  ListContainer,
+  ListItem,
+  ListText,
+  ListBar,
+} from "./style";
+import { FaAngleLeft, FaRegCompass, FaUmbrellaBeach } from "react-icons/fa";
 import image from "../../assets/images/Map2.png";
 import { useNavigate } from "react-router-dom";
 
-
 export const MapPage = () => {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <Container>
       <Header>
-        <FaAngleLeft cursor={"pointer"} size={"2em"} onClick={() => navigate(-1)}/>
+        <FaAngleLeft
+          cursor={"pointer"}
+          size={"2em"}
+          onClick={() => navigate(-1)}
+        />
         <HeaderText>Mapa da Região</HeaderText>
-        <FaRegCompass cursor={"pointer"} size={"2em"}/>
+        <FaRegCompass cursor={"pointer"} size={"2em"} />
       </Header>
       <MapContainer>
-          <MapImage src={image}/>
+        <MapImage src={image} />
       </MapContainer>
       <InfoContainer>
-      <Bar/>
-      <ListContainer>
+        <Bar />
+        <ListContainer>
           <ListItem>
-              <FaUmbrellaBeach size={"1.25em"}/>
-              <ListText>Praia dos Anjos</ListText>
+            <FaUmbrellaBeach size={"1.25em"} />
+            <ListText>Praia dos Anjos</ListText>
           </ListItem>
-          <ListBar/>
+          <ListBar />
           <ListItem>
-              <FaUmbrellaBeach size={"1.25em"}/>
-              <ListText>Praia Grande</ListText>
+            <FaUmbrellaBeach size={"1.25em"} />
+            <ListText>Praia do Forno</ListText>
           </ListItem>
-          <ListBar/>
+          <ListBar />
           <ListItem>
-              <FaUmbrellaBeach size={"1.25em"}/>
-              <ListText>Gruta Azul</ListText>
+            <FaUmbrellaBeach size={"1.25em"} />
+            <ListText>Praia do Farol</ListText>
           </ListItem>
-          <ListBar/>
+          <ListBar />
           <ListItem>
-              <FaUmbrellaBeach size={"1.25em"}/>
-              <ListText>Praia do Pontal</ListText>
+            <FaUmbrellaBeach size={"1.25em"} />
+            <ListText>As Prainhas do Pontal do Atalaia</ListText>
           </ListItem>
-          <ListBar/>
+          <ListBar />
           <ListItem>
-              <FaUmbrellaBeach size={"1.25em"}/>
-              <ListText>Prainha</ListText>
+            <FaUmbrellaBeach size={"1.25em"} />
+            <ListText>Praia Grande</ListText>
           </ListItem>
-          <ListBar/>
+          <ListBar />
           <ListItem>
-              <FaUmbrellaBeach size={"1.25em"}/>
-              <ListText>Praia do Forno</ListText>
+            <FaUmbrellaBeach size={"1.25em"} />
+            <ListText>Prainha</ListText>
           </ListItem>
-          <ListBar/>
+          <ListBar />
           <ListItem>
-              <FaUmbrellaBeach size={"1.25em"}/>
-              <ListText>As Prainhas do Pontal do Atalaia</ListText>
+            <FaUmbrellaBeach size={"1.25em"} />
+            <ListText>Praia do Pontal</ListText>
           </ListItem>
-          <ListBar/>
-      </ListContainer>
+          <ListBar />
+        </ListContainer>
       </InfoContainer>
     </Container>
   );

@@ -13,8 +13,9 @@ export const Container = styled.div`
   
 
   @media(max-width:768px){
-    width: 315px;
+    width: 80%;
     height: 400px;
+    padding: 0.1rem;
   }
 `;
 
@@ -30,7 +31,7 @@ export const Image = styled.img`
   }
 
   @media(max-width:768px){
-    width: 280px;
+    width: 90%;
     height: 450px;
   }
   

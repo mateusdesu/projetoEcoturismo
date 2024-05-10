@@ -39,8 +39,8 @@ export const DesenvolvedoresPage = () => {
         <Bar/>
         <InfoContainer>
         <Name><FaUser/> Davi Moreira Lessa</Name>
-        <Contact><FaEnvelope/> dev.andersonjunior@gmail.com</Contact>
-        <Contact><FaLinkedin/> linkedin.com/in/andersonjuniorz</Contact>
+        <Contact><FaEnvelope/> vimolessa@gmail.com</Contact>
+        <Contact><FaLinkedin/> linkedin.com/in/viola-lessa</Contact>
         </InfoContainer>
       </Card>
       </CardContainer>

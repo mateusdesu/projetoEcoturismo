@@ -24,7 +24,7 @@ export const ButtonNav = styled.button`
 
   @media (max-width: 768px) {
     font-size: 1rem;
-    width: 125px;
+    width: 80px;
     justify-content: flex-start;
 
   }
@@ -52,7 +52,7 @@ export const ButtonNavActive = styled.button`
 
   @media (max-width: 768px) {
     font-size: 1rem;
-    width: 125px;
+    width: 80px;
     justify-content: flex-start;
 
   }
