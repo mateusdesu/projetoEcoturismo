@@ -17,6 +17,7 @@ export const ImageContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0.5rem auto;
+  width: 100%;
 `;
 
 export const Image = styled.img`
@@ -74,7 +75,7 @@ export const Title = styled.h2`
 export const Description = styled.p`
   font-size: 20px;
   line-height: 20px;
-  overflow-y: none;
+  overflow-y: auto;
   text-align: justify;
   padding: 8px;
 

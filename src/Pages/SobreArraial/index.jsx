@@ -18,22 +18,29 @@ export const SobreArraial = () => {
   return (
     <Container>
       <Header>
-        <FaAngleLeft size={"2em"}  cursor={"pointer"} onClick={() => navigate(-1)} />
+        <FaAngleLeft
+          size={"2em"}
+          cursor={"pointer"}
+          onClick={() => navigate(-1)}
+        />
       </Header>
       <ImageContainer>
         <Image src={image} />
       </ImageContainer>
       <InfoContainer>
         <Bar />
-        <Title>Arraial do Cabo</Title>
+        <Title>Bora? Partiu Arraial do Cabo? </Title>
         <Description>
-          Está situado na Região dos Lagos do estado do Rio de Janeiro. Trata-se
-          de uma cidade costeira, possuindo uma altitude média de apenas oito
-          metros. Fundada em 1503 pelo conquistador Américo Vespúcio, foi
-          elevada à categoria de município apenas em 1985, após sua emancipação
-          do município vizinho de Cabo Frio. Em 2014 tinha uma população de 28
-          866 habitantes segundo o IBGE. As rodovias que servem o município são
-          a RJ-140/BR-120 e a RJ-102.
+          Olá, sou Arraial do Cabo! Sou a cidade anfitriã e guardiã das belezas
+          naturais que em mim se encontram. À medida que crescemos,
+          turisticamente, convido, você, a me conhecer, pois aqui vivem
+          extrativistas que tiram o seu sustento da pesca; moradores que
+          dependem de um turismo sustentável para prosseguir com seus serviços e
+          o mais especial, você, que veio desfrutar das minhas belezas, porque é
+          tudo isso é meu, é seu e de todos aqueles que aqui virão. Então, cuide
+          de mim! E olhe: não se esqueça de sempre carregar seu lixo até um
+          lugar apropriado de despejo, evitando assim transtornos para você e
+          para mim.
         </Description>
       </InfoContainer>
     </Container>

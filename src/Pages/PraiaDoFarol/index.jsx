@@ -6,7 +6,7 @@ import {
   ImageContainer,
   InfoContainer,
   Title,
-  Description
+  Description,
 } from "./style";
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -29,17 +29,16 @@ export const PraiaDoFarol = () => {
       </ImageContainer>
       <InfoContainer>
         <Bar />
-        <Title>Praia do Farol</Title>
+        <Title>Bora? Partiu Praia do Farol?</Title>
         <Description>
-          Está no ranking das mais lindas praias do Brasil pela harmonia e
-          perfeição das suas areias brancas, mar translúcido e fenômeno da
-          Ressurgência que privilegia o local com a mais variada biodiversidade
-          marinha, seu acesso é somente pelo mar. Essa belíssima praia é
-          protegida pela Marinha do Brasil e precisa-se de autorização para
-          visitá-la, assim também precisa da autorização para fazer a trilha do
-          Farol Velho, ponto mais alto da Cidade que leva em torno de 1h30 para
-          subir matas virgens e fechadas, mas o visual vale muito a pena! Uma
-          vista panorâmica fantástica de toda Cidade.
+          Olá, meu amigo(a), eu sou a Praia do Farol e tenho muitos segredos
+          desde o descobrimento do Brasil, já fui um cemitério indígena, tenho
+          lendas assustadoras e já vivi com muitos faroleiros, rogo a vocês que
+          me protejam, cuidando do meu entorno, recolhendo seu lixo e se
+          empenhando para buscar a educação ambiental. Vamos juntos seguir os
+          princípios que norteiam a sustentabilidade, preservando minhas águas e
+          toda biodiversidade que em mim vive, assim desfrutarmos de um ambiente
+          saudável e duradouro. Muito obrigado pelo seu compromisso e atenção.
         </Description>
       </InfoContainer>
     </Container>

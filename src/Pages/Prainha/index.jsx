@@ -6,7 +6,7 @@ import {
   ImageContainer,
   InfoContainer,
   Title,
-  Description
+  Description,
 } from "./style";
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -29,15 +29,16 @@ export const Prainha = () => {
       </ImageContainer>
       <InfoContainer>
         <Bar />
-        <Title>Prainha</Title>
+        <Title>Bora? Partiu Prainha?</Title>
         <Description>
-          Excelente para encontrar quiosques prontinhos para servir uma deliciosa
-          refeição, é o cartão postal da cidade. Logo que você chega se depara
-          com essa belezura! Sem falar no Mirante que foi construído
-          recentemente para trazer mais beleza ao local. É a praia escolhida
-          pelas famílias, tem mergulho, fotos em Standart, Banana Boat e uma
-          feirinha. No cantinho tem uma pequena trilha que vai ate a Graçainha
-          local ideal uma pesca artesanal com linha e anzol.
+          Oi, como vocês estão? Eu sou a Prainha e me sinto muito honrada de
+          tê-los aqui no meu santuário sagrado. Guardo tesouros que vocês não
+          podem imaginar! Venham mergulhar nas minhas profundezas e descobrirão
+          toda riqueza marinha que eu preservo. Agora faço um apelo: eu sou um
+          bem de valor inestimável, então me trate com respeito e com devido
+          apreço: recolha seu lixo e o despeje até um local seguro, evitando que
+          chegue as minhas águas e impacte negativamente na minha vida marinha.
+          Salve-me!
         </Description>
       </InfoContainer>
     </Container>

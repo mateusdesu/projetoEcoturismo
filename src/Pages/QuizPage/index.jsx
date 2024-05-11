@@ -3,7 +3,6 @@ import { Nav4 } from "../../components/Nav";
 import { Wrapper } from "../../components/Wrapper/style";
 import image from "../../assets/images/Quiz2.png"
 import {Image,QuizLink} from "./style.js"
-import {TitleText} from "../../components/TitleText"
 
 export const QuizPage = () => {
   return (

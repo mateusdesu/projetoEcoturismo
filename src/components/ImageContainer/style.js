@@ -8,13 +8,13 @@ export const Container = styled.div`
   height: 400px;
   padding: 0.5rem;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   flex-direction: column;
   
 
   @media(max-width:768px){
-    width: 80%;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     padding: 0.1rem;
   }
 `;
@@ -31,8 +31,9 @@ export const Image = styled.img`
   }
 
   @media(max-width:768px){
-    width: 90%;
-    height: 450px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
   }
   
   

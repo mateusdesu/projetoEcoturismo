@@ -6,7 +6,7 @@ import {
   ImageContainer,
   InfoContainer,
   Title,
-  Description
+  Description,
 } from "./style";
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -29,16 +29,16 @@ export const PraiaDoPontal = () => {
       </ImageContainer>
       <InfoContainer>
         <Bar />
-        <Title>Praia do Pontal</Title>
+        <Title>Bora? Partiu Praia do Pontal?</Title>
         <Description>
-          Dentro da antiga área da Companhia Nacional da Álcalis, logo após a
-          entrada do Pórtico: EU AMO ARRAIAL, ideal para crianças, idosos e
-          famílias que gostam daquele delicioso churrasco a beira mar embaixo
-          das casuarinas, onde também conseguimos admirar as canoas e paios dos
-          pescasdores artesanais. Na sua extensão tem a Lagoa Vermelha ideal
-          para prática de kitesurf, acessos para passeios de buggy, um pequeno
-          camping particular para acampamento e bastante áreas para corridas e
-          caminhadas.
+          Bem-vindo, viajante, eu sou aquela que lhe trará alegria com seus
+          familiares, venha desfrutar de um maravilhoso churrasco em minhas
+          águas calmas e ambiente sereno. Quero te convidar para me tratar como
+          os povos originários, numa relação de harmonia e respeito. Não
+          descarregue todas suas frustrações em mim. Crie um ambiente bonito,
+          limpo e delicado, porque nossos olhos gostam de apreciar o belo. Não
+          se iguale aquele que não consegue encontrar o seu lugar em seu lar: a
+          Terra.
         </Description>
       </InfoContainer>
     </Container>

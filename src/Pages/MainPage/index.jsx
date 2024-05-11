@@ -11,13 +11,14 @@ export const MainPage = () => {
     <Wrapper>
       <Header />
       <Nav1 />
+      <TitleText title ="A Cidade de Arraial do Cabo"/>
       <Link to="/sobre-arraial">
       <ImageContainer
-        title="Sobre Arraial do Cabo"
+        title="A Cidade de Arraial do Cabo"
         src={image}
       />
       </Link>
-      <TitleText title ="Sobre Arraial"/>
+      
     </Wrapper>
   );
 };

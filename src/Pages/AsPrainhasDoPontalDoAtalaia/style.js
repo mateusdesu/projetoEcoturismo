@@ -17,6 +17,7 @@ export const ImageContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0.5rem auto;
+  width: 100%;
 `;
 
 export const Image = styled.img`
@@ -25,6 +26,7 @@ export const Image = styled.img`
   @media (max-width: 768px) {
     width: 100%;
     height: 220px;
+    width: 100%;
     
   }
 `;
@@ -61,7 +63,7 @@ export const Bar = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   text-align: flex-start;
   margin-top: 8px;
@@ -74,9 +76,9 @@ export const Title = styled.h2`
 export const Description = styled.p`
   font-size: 20px;
   line-height: 20px;
-  overflow-y: none;
   text-align: justify;
   padding: 8px;
+  overflow-y: auto;
 
   @media (min-width: 768px) {
     font-size: 20px;

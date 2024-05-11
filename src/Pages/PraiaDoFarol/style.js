@@ -18,6 +18,7 @@ export const ImageContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0.5rem auto;
+  width: 100%;
   background: url(../../assets/images/SobrePraiaDoForno.png) fixed no-repeat;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -33,6 +34,7 @@ export const Image = styled.img`
   @media (max-width: 768px) {
     width: 280px;
     height: 220px;
+    width: 100%;
     
   }
 `;
@@ -81,10 +83,10 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-size: 20px;
-  line-height: 20px;
-  overflow-y: none;
+  line-height: 22px;
   text-align: justify;
   padding: 8px;
+  overflow-y: auto;
 
   @media (min-width: 768px) {
     font-size: 22px;

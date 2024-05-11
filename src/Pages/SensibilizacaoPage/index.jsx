@@ -11,13 +11,13 @@ export const SensibilizacaoPage = () => {
     <Wrapper>
       <Header />
       <Nav3 />
+      <TitleText title ="Ecoturismo consciente"/>
       <Link to={"/coleta-seletiva"}>
       <ImageContainer
         title="Sobre Arraial do Cabo"
         src={image}
       />
       </Link>
-      <TitleText title ="Ecoturismo consciente"/>
     </Wrapper>
   );
 };

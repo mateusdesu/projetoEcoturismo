@@ -6,7 +6,7 @@ import {
   ImageContainer,
   InfoContainer,
   Title,
-  Description
+  Description,
 } from "./style";
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -29,16 +29,15 @@ export const PraiaGrande = () => {
       </ImageContainer>
       <InfoContainer>
         <Bar />
-        <Title>Praia Grande</Title>
+        <Title>Bora? Partiu Praia grande?</Title>
         <Description>
-          Praia com grande extensão de terra que propicia as mais diversificadas
-          práticas esportivas como: surf, vôlei, futsal, passeios de
-          quadriciclo e buggy. Suas águas são bem geladas e podemos admirar no
-          final do dia um magnífico pôr-do-sol. Em sua orla tem uma estátua da
-          atriz, cabista, Flávia Alessandra. Também pode se passear na trilha
-          que da acesso ao Deck dos pescadores, Janela do paraíso e Casa do
-          Vigia, local que fica o vigia para sinalizar ao pescador quando o
-          cardume está chegando.
+          Olá, querido visitante, eu sou a Praia Grande e minha missão é a
+          preservação da vida e de todo meu ambiente, também lhe convido para
+          participar dessa missão! Vamos? Cuidaremos dos recifes de corais, das
+          tartarugas que passeiam no seu lar, dos peixes que nos apresentam uma
+          linda dança, das aves que bailam no entardecer. Aqui a educação
+          ambiental, a sustentabilidade e o respeito com a natureza é o nosso
+          compromisso. Vamos nos tornar guardião de todas essas riquezas?
         </Description>
       </InfoContainer>
     </Container>

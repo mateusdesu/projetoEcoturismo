@@ -6,7 +6,7 @@ import {
   ImageContainer,
   InfoContainer,
   Title,
-  Description
+  Description,
 } from "./style";
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -29,17 +29,15 @@ export const AsPrainhasDoPontalDoAtalaia = () => {
       </ImageContainer>
       <InfoContainer>
         <Bar />
-        <Title>As Prainhas do Pontal do Atalaia</Title>
+        <Title>Bora? Partiu As Prainhas do Pontal do Atalaia?</Title>
         <Description>
-          Conhecida por sua escadaria, seu acesso é tanto pelo mar quanto pela
-          trilha do Pontal do Atalaia, que se pode fazer tanto de carro quanto a
-          pé, a caminhada leva mais ou menos 2 horas, nessa praia temos a Gruta
-          do Amor, a mais procuradas pelos casais que não querem se separar,
-          dizem as más línguas, que se o casal se beijar em frente a gruta ou
-          dentro dela, nunca mais se separa. E aí? No passeio de barco ao acesso
-          a essa praia também pode se conhecer a Gruta Azul, indescritível,
-          somente estando pertinho para tirar suas conclusões, tamanha beleza do
-          local.
+          Oi, que bom que você esteja por aqui! Gostaria de lhe convidar para
+          ser mais um guardião das minhas areias macias e águas cristalinas.
+          Quero que você contemple meu santuário de vida terrestre e marinha e
+          seja mais um herdeiro de toda essa beleza. Desejo que aqueles que me
+          visitem reconheçam a minha beleza e me tratem com respeito que mereço:
+          não poluindo meus mares, minhas areias e minhas encostas. Me preserve
+          para as gerações futuras! Gratidão!
         </Description>
       </InfoContainer>
     </Container>
