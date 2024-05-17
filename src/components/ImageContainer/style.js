@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-items: auto;
   align-items: center;
   width: 80%;
-  height: 400px;
+  height: 100%;
   padding: 0.5rem;
   margin: 0 auto;
   margin-top: 0.5rem;
@@ -20,8 +20,8 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 360px;
-  height: 400px;
+  width: 22rem;
+  height: 26rem;
   border-radius: 12px;
   
   
@@ -32,7 +32,7 @@ export const Image = styled.img`
 
   @media(max-width:768px){
     width: 100%;
-    height: 100%;
+    height: 30rem;
     border-radius: 4px;
   }
   

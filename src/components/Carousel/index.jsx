@@ -9,11 +9,48 @@ import AsPrainhasDoPontalDoAtalaia from "../../assets/images/AsPrainhasDoPontalD
 import PraiaGrande from "../../assets/images/PraiaGrande.png";
 import Prainha from "../../assets/images/Prainha.png";
 import PraiaDoPontal from "../../assets/images/PraiaDoPontal.png";
+import image from "../../assets/images/SobreArraial.png";
+import seliga1 from "../../assets/images/Seliga1.jpg";
+import seliga2 from "../../assets/images/Seliga2.jpg";
+import seliga3 from "../../assets/images/Seliga3.jpg";
+import seliga4 from "../../assets/images/Seliga4.jpg";
+import seliga5 from "../../assets/images/Seliga5.jpg";
+import seliga6 from "../../assets/images/Seliga6.jpg";
+import seliga7 from "../../assets/images/Seliga7.jpg";
+import seliga8 from "../../assets/images/Seliga8.jpg";
+import seliga9 from "../../assets/images/Seliga9.jpg";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
-function UncontrolledExample() {
+export const CityCarousel = () => {
+  const [cityIndex, setCityIndex] = useState(0);
+
+  // Efeito para carregar o índice do localStorage quando o componente é montado
+  useEffect(() => {
+    const savedCityIndex = sessionStorage.getItem("carouselCityIndex");
+    if (savedCityIndex) {
+      setCityIndex(parseInt(savedCityIndex, 10));
+    }
+  }, []);
+
+  // Função chamada quando o carrossel é alterado
+  const handleCitySelect = (selectedCityIndex) => {
+    setCityIndex(selectedCityIndex);
+    sessionStorage.setItem("carouselCityIndex", selectedCityIndex);
+  };
   return (
-    <Carousel variant="dark" indicators={false}>
+    <Carousel
+      activeIndex={cityIndex}
+      onSelect={handleCitySelect}
+      variant="dark"
+      indicators={false}
+    >
+      <Carousel.Item>
+        <TitleText title="A Cidade de Arraial do Cabo" />
+        <Link to="/sobre-arraial">
+          <ImageContainer src={image} alt="A Cidade de Arraial do Cabo" />
+        </Link>
+      </Carousel.Item>
       <Carousel.Item>
         <TitleText title="Praia dos Anjos" />
         <Link to="/praia-dos-anjos">
@@ -61,6 +98,59 @@ function UncontrolledExample() {
       </Carousel.Item>
     </Carousel>
   );
-}
+};
 
-export default UncontrolledExample;
+export const TrashCarousel = () => {
+  const [trashIndex, setTrashIndex] = useState(0);
+
+  // Efeito para carregar o índice do localStorage quando o componente é montado
+  useEffect(() => {
+    const savedTrashIndex = sessionStorage.getItem("carouselTrashIndex");
+    if (savedTrashIndex) {
+      setTrashIndex(parseInt(savedTrashIndex, 10));
+    }
+  }, []);
+
+  // Função chamada quando o carrossel é alterado
+  const handleTrashSelect = (selectedTrashIndex) => {
+    setTrashIndex(selectedTrashIndex);
+    sessionStorage.setItem("carouselTrashIndex", selectedTrashIndex);
+  };
+  return (
+    <Carousel
+      activeIndex={trashIndex}
+      onSelect={handleTrashSelect}
+      variant="dark"
+      indicators={false}
+      slide={false}
+    >
+      <Carousel.Item>
+        <ImageContainer src={seliga1} alt="Seliga1" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={seliga2} alt="Seliga2" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={seliga3} alt="Seliga3" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={seliga4} alt="Seliga4" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={seliga5} alt="Seliga5" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={seliga6} alt="Seliga6" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={seliga7} alt="Seliga7" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={seliga8} alt="Seliga8" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={seliga9} alt="Seliga9" />
+      </Carousel.Item>
+    </Carousel>
+  );
+};

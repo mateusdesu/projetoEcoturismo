@@ -33,7 +33,7 @@ export const Image = styled.img`
  
   @media (max-width: 768px) {
     width: 280px;
-    height: 220px;
+    height: 14rem;
     width: 100%;
     
   }
@@ -83,7 +83,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-size: 20px;
-  line-height: 22px;
+  line-height: 20px;
   text-align: justify;
   padding: 8px;
   overflow-y: auto;

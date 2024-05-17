@@ -25,11 +25,11 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 320px;
-  width: 450px;
+  height: 20rem;
+  width: 30rem;
   @media (max-width: 768px) {
     width: 100%;
-    height: 100%;
+    height: 12.5rem;
     
   }
 `;

@@ -21,11 +21,11 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 320px;
-  width: 450px;
+  height: 20rem;
+  width: 30rem;
   @media (max-width: 768px) {
     width: 100%;
-    height: 220px;
+    height: 14rem;
     
   }
 `;
@@ -73,14 +73,14 @@ export const Title = styled.h2`
 `
 
 export const Description = styled.p`
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 19.5px;
   overflow-y: auto;
   text-align: justify;
   padding: 8px;
 
   @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 22px;
   }
   `

@@ -28,12 +28,12 @@ export const ImageContainer = styled.div`
 
 
 export const Image = styled.img`
-  height: 320px;
-  width: 500px;
+  height: 20rem;
+  width: 30rem;
  
   @media (max-width: 768px) {
     width: 320px;
-    height: 220px;
+    height: 14rem;
     width: 100%;
     
   }
@@ -83,13 +83,13 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-size: 20px;
-  line-height: 22px;
+  line-height: 20px;
   overflow-y: auto;
   text-align: justify;
   padding: 8px;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 20px;
   }
   `
