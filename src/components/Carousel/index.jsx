@@ -19,6 +19,17 @@ import seliga6 from "../../assets/images/Seliga6.jpg";
 import seliga7 from "../../assets/images/Seliga7.jpg";
 import seliga8 from "../../assets/images/Seliga8.jpg";
 import seliga9 from "../../assets/images/Seliga9.jpg";
+import placa1 from "../../assets/images/Placa1.jpg";
+import placa2 from "../../assets/images/Placa2.jpg";
+import placa3 from "../../assets/images/Placa3.jpg";
+import placa4 from "../../assets/images/Placa4.jpg";
+import placa5 from "../../assets/images/Placa5.jpg";
+import placa6 from "../../assets/images/Placa6.jpg";
+import placa7 from "../../assets/images/Placa7.jpg";
+import placa8 from "../../assets/images/Placa8.jpg";
+import placa9 from "../../assets/images/Placa9.jpg";
+import placa10 from "../../assets/images/Placa10.jpg";
+import placa11 from "../../assets/images/Placa11.jpg";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -150,6 +161,64 @@ export const TrashCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <ImageContainer src={seliga9} alt="Seliga9" />
+      </Carousel.Item>
+    </Carousel>
+  );
+};
+
+export const SignCarousel = () => {
+  const [signIndex, setSignIndex] = useState(0);
+
+  // Efeito para carregar o índice do localStorage quando o componente é montado
+  useEffect(() => {
+    const savedSignIndex = sessionStorage.getItem("carouselSignIndex");
+    if (savedSignIndex) {
+      setSignIndex(parseInt(savedSignIndex, 10));
+    }
+  }, []);
+
+  // Função chamada quando o carrossel é alterado
+  const handleSignSelect = (selectedSignIndex) => {
+    setSignIndex(selectedSignIndex);
+    sessionStorage.setItem("carouselSignIndex", selectedSignIndex);
+  };
+  return (
+    <Carousel
+      activeIndex={signIndex}
+      onSelect={handleSignSelect}
+      variant="dark"
+      indicators={false}
+      slide={false}
+    >
+      <Carousel.Item>
+        <ImageContainer src={placa1} alt="placa1" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={placa2} alt="placa2" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={placa3} alt="placa3" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={placa4} alt="placa4" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={placa5} alt="placa5" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={placa6} alt="placa6" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={placa7} alt="placa7" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={placa8} alt="placa8" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={placa9} alt="placa9" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={placa10} alt="placa10" />
       </Carousel.Item>
     </Carousel>
   );
