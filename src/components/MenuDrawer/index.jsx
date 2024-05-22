@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { useState } from "react";
 import { ImageContainerModal } from "../../components/ImageContainer";
+import { PdfCarousel } from "../Carousel";
 
 import OrientacaoPraiaImg from "../../assets/images/OrientacaoPraia.jpg";
 import ConsequenciaLixoImg from "../../assets/images/ConsequenciaLixo.jpg";
@@ -67,6 +68,23 @@ const OrientacaoPraia = (props) => {
     </Modal>
   );
 };
+const Criterio = (props) => {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Body>
+        <PdfCarousel/>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Fechar</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+};
 
 const ConsequenciaLixo = (props) => {
   return (
@@ -90,6 +108,7 @@ export const MenuDrawer = (props) => {
   const { open, onClose } = props;
   const [orientacaoModalShow, setOrientacaoModalShow] = useState(false);
   const [consequenciaModalShow, setConsequenciaModalShow] = useState(false);
+  const [criterioModalShow, setCriterioModalShow] = useState(false);
 
   return (
     <Drawer open={open}>
@@ -101,6 +120,9 @@ export const MenuDrawer = (props) => {
           Orientações de uso das praias
         </MenuItem>
         <MenuItem onClick={() => setConsequenciaModalShow(true)}>
+          Consequências do lixo no meio ambiente
+        </MenuItem>
+        <MenuItem onClick={() => setCriterioModalShow(true)}>
           Cartilha de uso das praias
         </MenuItem>
         <Link to="https://www.arraialdocabocvb.com.br/hospedagem-associados-arraial-do-cabo-convention">
@@ -119,8 +141,18 @@ export const MenuDrawer = (props) => {
           <MenuItem>Desenvolvedores</MenuItem>
         </Link>
       </MenuList>
-      <OrientacaoPraia show={orientacaoModalShow} onHide={() => setOrientacaoModalShow(false)} />
-      <ConsequenciaLixo show={consequenciaModalShow} onHide={() => setConsequenciaModalShow(false)} />
+      <OrientacaoPraia
+        show={orientacaoModalShow}
+        onHide={() => setOrientacaoModalShow(false)}
+      />
+      <ConsequenciaLixo
+        show={consequenciaModalShow}
+        onHide={() => setConsequenciaModalShow(false)}
+      />
+      <Criterio
+        show={criterioModalShow}
+        onHide={() => setCriterioModalShow(false)}
+      />
     </Drawer>
   );
 };

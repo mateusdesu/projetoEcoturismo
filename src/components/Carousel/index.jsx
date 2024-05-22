@@ -30,13 +30,23 @@ import placa8 from "../../assets/images/Placa8.jpg";
 import placa9 from "../../assets/images/Placa9.jpg";
 import placa10 from "../../assets/images/Placa10.jpg";
 import placa11 from "../../assets/images/Placa11.jpg";
+import criterio1 from "../../assets/images/criterio1.jpg"
+import criterio2 from "../../assets/images/criterio2.jpg"
+import criterio3 from "../../assets/images/criterio3.jpg"
+import criterio4 from "../../assets/images/criterio4.jpg"
+import criterio5 from "../../assets/images/criterio5.jpg"
+import criterio6 from "../../assets/images/criterio6.jpg"
+import criterio7 from "../../assets/images/criterio7.jpg"
+import criterio8 from "../../assets/images/criterio8.jpg"
+import criterio9 from "../../assets/images/criterio9.jpg"
+import criterio10 from "../../assets/images/criterio10.jpg"
+import criterio11 from "../../assets/images/criterio11.jpg"
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export const CityCarousel = () => {
   const [cityIndex, setCityIndex] = useState(0);
 
-  // Efeito para carregar o índice do localStorage quando o componente é montado
   useEffect(() => {
     const savedCityIndex = sessionStorage.getItem("carouselCityIndex");
     if (savedCityIndex) {
@@ -44,7 +54,6 @@ export const CityCarousel = () => {
     }
   }, []);
 
-  // Função chamada quando o carrossel é alterado
   const handleCitySelect = (selectedCityIndex) => {
     setCityIndex(selectedCityIndex);
     sessionStorage.setItem("carouselCityIndex", selectedCityIndex);
@@ -114,7 +123,6 @@ export const CityCarousel = () => {
 export const TrashCarousel = () => {
   const [trashIndex, setTrashIndex] = useState(0);
 
-  // Efeito para carregar o índice do localStorage quando o componente é montado
   useEffect(() => {
     const savedTrashIndex = sessionStorage.getItem("carouselTrashIndex");
     if (savedTrashIndex) {
@@ -122,7 +130,6 @@ export const TrashCarousel = () => {
     }
   }, []);
 
-  // Função chamada quando o carrossel é alterado
   const handleTrashSelect = (selectedTrashIndex) => {
     setTrashIndex(selectedTrashIndex);
     sessionStorage.setItem("carouselTrashIndex", selectedTrashIndex);
@@ -169,7 +176,6 @@ export const TrashCarousel = () => {
 export const SignCarousel = () => {
   const [signIndex, setSignIndex] = useState(0);
 
-  // Efeito para carregar o índice do localStorage quando o componente é montado
   useEffect(() => {
     const savedSignIndex = sessionStorage.getItem("carouselSignIndex");
     if (savedSignIndex) {
@@ -177,7 +183,6 @@ export const SignCarousel = () => {
     }
   }, []);
 
-  // Função chamada quando o carrossel é alterado
   const handleSignSelect = (selectedSignIndex) => {
     setSignIndex(selectedSignIndex);
     sessionStorage.setItem("carouselSignIndex", selectedSignIndex);
@@ -219,6 +224,53 @@ export const SignCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <ImageContainer src={placa10} alt="placa10" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={placa11} alt="placa11" />
+      </Carousel.Item>
+    </Carousel>
+  );
+};
+export const PdfCarousel = () => {
+  
+  return (
+    <Carousel
+      variant="dark"
+      indicators={false}
+      slide={false}
+    >
+      <Carousel.Item>
+        <ImageContainer src={criterio1} alt="criterio1" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={criterio2} alt="criterio2" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={criterio3} alt="criterio4" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={criterio4} alt="criterio4" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={criterio5} alt="criterio5" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={criterio6} alt="criterio6" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={criterio7} alt="criterio7" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={criterio8} alt="criterio8" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={criterio9} alt="criterio9" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={criterio10} alt="criterio10" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <ImageContainer src={criterio11} alt="criterio11" />
       </Carousel.Item>
     </Carousel>
   );
