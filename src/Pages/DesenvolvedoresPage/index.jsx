@@ -38,7 +38,7 @@ export const DesenvolvedoresPage = () => {
         </InfoContainer>
         <Bar/>
         <InfoContainer>
-        <Name><FaUser/> Davi Moreira Lessa</Name>
+        <Name><FaUser/> Vi Moreira Lessa</Name>
         <Contact><FaEnvelope/> vimolessa@gmail.com</Contact>
         <Contact><FaLinkedin/> linkedin.com/in/viola-lessa</Contact>
         </InfoContainer>
