@@ -5,8 +5,9 @@ export const Header = styled.div`
   align-items: base-line;
   justify-content: space-between;
   flex-direction: row;
-  background-color: #E7E7E7D1;
-  height: 50px;
+  background-color: #e7e7e7d1;
+  height: 4rem;
+  width: 100%;
   margin: 0 4px 0 4px;
   border-radius: 8px;
   padding: 8px;
@@ -16,29 +17,28 @@ export const MapContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 4px;
-  margin:auto;
+  margin: auto;
   margin-top: 8px;
 `;
 
 export const MapImage = styled.img`
-  height: 280px;
+  height: 240px;
   width: auto;
   @media (max-width: 768px) {
     width: 100%;
     height: 220px;
-    
   }
 `;
 
 export const Container = styled.div`
-  display:flex
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding:4px;
-  background-color: #A6BBDE99;
-  width:100%;
-  height:100vh;
+  justify-content: flex-start;
+  padding: 4px;
+  background-color: #a6bbde99;
+  width: 100%;
+  height: 100vh;
 `;
 
 export const HeaderText = styled.h1`
@@ -49,16 +49,15 @@ export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #E7E7E7D1;
+  justify-content: flex-start;
+  background-color: #e7e7e7d1;
   border-radius: 16px;
-  padding: 8px;
-  margin: 12px 4px 0 4px;
-  height: 48%;
+  padding: 8px 4px;
+  height: 50rem;
 `;
 
 export const Bar = styled.div`
-  background-color: #1E1E1E99;
+  background-color: #1e1e1e99;
   width: 150px;
   height: 12px;
   border-radius: 50px;
@@ -72,7 +71,7 @@ export const ListContainer = styled.div`
   padding: 8px;
   margin-top: 8px;
 
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     width: 800px;
     letter-spacing: 1px;
   }
@@ -90,6 +89,11 @@ export const ListText = styled.h3`
   font-size: 18px;
   font-weight: 500;
   margin-left: 8px;
+  letter-spacing: 1px;
+  @media (min-width: 768px) {
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
 `;
 
 export const ListBar = styled.div`

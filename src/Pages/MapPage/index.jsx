@@ -69,6 +69,10 @@ export const MapPage = () => {
             <ListText>Praia do Pontal</ListText>
           </ListItem>
           <ListBar />
+          <ListItem>
+            <FaUmbrellaBeach size={"1.25em"} />
+            <ListText>Praia Brava</ListText>
+          </ListItem>
         </ListContainer>
       </InfoContainer>
     </Container>

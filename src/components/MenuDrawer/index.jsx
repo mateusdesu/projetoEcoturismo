@@ -6,7 +6,6 @@ import Modal from "react-bootstrap/Modal";
 import { useState } from "react";
 import { ImageContainerModal } from "../../components/ImageContainer";
 import { PdfCarousel } from "../Carousel";
-import { TitleText } from "../TitleText";
 
 import OrientacaoPraiaImg from "../../assets/images/OrientacaoPraia.jpg";
 import ConsequenciaLixoImg from "../../assets/images/ConsequenciaLixo.jpg";
@@ -40,7 +39,7 @@ const MenuList = styled.div`
 `;
 
 const MenuItem = styled.h2`
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   margin-top: 4px;
   text-decoration: underline;
@@ -148,12 +147,61 @@ const ConsequenciaLixo = (props) => {
   );
 };
 
+const Privacidade = (props) => {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Body>
+        <p>
+          Seus dados pessoais não são compartilhados com o aplicativo, logo para
+          acessá-lo não é fornecido e coletado nenhum dado do usuário. Apenas
+          acesso a internet para navegar na interface do aplicativo.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Fechar</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+};
+const Responsabilidade = (props) => {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Body>
+        <p>
+          Os responsáveis por esse aplicativo, não se responsabilizam por
+          qualquer dano que possa ocorrer por informações retiradas desse
+          aplicativo para basear-se em outros trabalhos, visto que foram
+          retiradas de observações in loco, porém são relatos e sites de
+          consultas retirados na data de execução, não podendo garantir que as
+          fontes dos sites sejam modificadas ou alteradas em datas futuras. Fica
+          expressamente acertado o caráter informativo do aplicativo.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Fechar</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+};
+
 export const MenuDrawer = (props) => {
   const { open, onClose } = props;
   const [orientacaoModalShow, setOrientacaoModalShow] = useState(false);
   const [consequenciaModalShow, setConsequenciaModalShow] = useState(false);
   const [criterioModalShow, setCriterioModalShow] = useState(false);
   const [educacaoModalShow, setEducacaoModalShow] = useState(false);
+  const [privacidadeModalShow, setPrivacidadeModalShow] = useState(false);
+  const [responsabilidadeModalShow, setResponsabilidadeModalShow] = useState(false);
 
   return (
     <Drawer open={open}>
@@ -182,13 +230,20 @@ export const MenuDrawer = (props) => {
         <Link to="https://www.google.com.br/maps/place/Arraial+do+Cabo,+RJ,+28930-000/@-22.9646742,-42.0298108,14z/data=!3m1!4b1!4m6!3m5!1s0x97197ba011d3a9:0x3c4a2b7b14e00309!8m2!3d-22.9667613!4d-42.0277716!16s%2Fm%2F027l4rv">
           <MenuItem>Mapas</MenuItem>
         </Link>
+
         <Link to="https://www.arraialdocabocvb.com.br/hospedagem-associados-arraial-do-cabo-convention">
           <MenuItem>Hotéis</MenuItem>
         </Link>
-        
+
         <Link to="https://www.arraialdocabocvb.com.br/gastronomia-associados-arraial-do-cabo-convention">
           <MenuItem>Restaurantes</MenuItem>
         </Link>
+        <MenuItem onClick={() => setPrivacidadeModalShow(true)}>
+          Política de Privacidade
+        </MenuItem>
+        <MenuItem onClick={() => setResponsabilidadeModalShow(true)}>
+          Termo de Responsabilidade
+        </MenuItem>
         <Link to="../desenvolvedores">
           <MenuItem>Desenvolvedores</MenuItem>
         </Link>
@@ -208,6 +263,14 @@ export const MenuDrawer = (props) => {
       <Educacao
         show={educacaoModalShow}
         onHide={() => setEducacaoModalShow(false)}
+      />
+      <Privacidade
+        show={privacidadeModalShow}
+        onHide={() => setPrivacidadeModalShow(false)}
+      />
+      <Responsabilidade
+        show={responsabilidadeModalShow}
+        onHide={() => setResponsabilidadeModalShow(false)}
       />
     </Drawer>
   );

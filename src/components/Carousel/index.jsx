@@ -9,6 +9,7 @@ import AsPrainhasDoPontalDoAtalaia from "../../assets/images/AsPrainhasDoPontalD
 import PraiaGrande from "../../assets/images/PraiaGrande.png";
 import Prainha from "../../assets/images/Prainha.png";
 import PraiaDoPontal from "../../assets/images/PraiaDoPontal.png";
+import PraiaBrava from "../../assets/images/PraiaBrava.jpg";
 import image from "../../assets/images/SobreArraial.png";
 import seliga1 from "../../assets/images/Seliga1.jpg";
 import seliga2 from "../../assets/images/Seliga2.jpg";
@@ -30,17 +31,17 @@ import placa8 from "../../assets/images/Placa8.jpg";
 import placa9 from "../../assets/images/Placa9.jpg";
 import placa10 from "../../assets/images/Placa10.jpg";
 import placa11 from "../../assets/images/Placa11.jpg";
-import criterio1 from "../../assets/images/criterio1.jpg"
-import criterio2 from "../../assets/images/criterio2.jpg"
-import criterio3 from "../../assets/images/criterio3.jpg"
-import criterio4 from "../../assets/images/criterio4.jpg"
-import criterio5 from "../../assets/images/criterio5.jpg"
-import criterio6 from "../../assets/images/criterio6.jpg"
-import criterio7 from "../../assets/images/criterio7.jpg"
-import criterio8 from "../../assets/images/criterio8.jpg"
-import criterio9 from "../../assets/images/criterio9.jpg"
-import criterio10 from "../../assets/images/criterio10.jpg"
-import criterio11 from "../../assets/images/criterio11.jpg"
+import criterio1 from "../../assets/images/criterio1.jpg";
+import criterio2 from "../../assets/images/criterio2.jpg";
+import criterio3 from "../../assets/images/criterio3.jpg";
+import criterio4 from "../../assets/images/criterio4.jpg";
+import criterio5 from "../../assets/images/criterio5.jpg";
+import criterio6 from "../../assets/images/criterio6.jpg";
+import criterio7 from "../../assets/images/criterio7.jpg";
+import criterio8 from "../../assets/images/criterio8.jpg";
+import criterio9 from "../../assets/images/criterio9.jpg";
+import criterio10 from "../../assets/images/criterio10.jpg";
+import criterio11 from "../../assets/images/criterio11.jpg";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -114,6 +115,12 @@ export const CityCarousel = () => {
         <TitleText title="Praia do Pontal" />
         <Link to="/praia-do-pontal">
           <ImageContainer src={PraiaDoPontal} alt="Praia do Pontal" />
+        </Link>
+      </Carousel.Item>
+      <Carousel.Item>
+        <TitleText title="Praia Brava" />
+        <Link to="/praia-brava">
+          <ImageContainer src={PraiaBrava} alt="Praia Brava" />
         </Link>
       </Carousel.Item>
     </Carousel>
@@ -232,13 +239,8 @@ export const SignCarousel = () => {
   );
 };
 export const PdfCarousel = () => {
-  
   return (
-    <Carousel
-      variant="dark"
-      indicators={false}
-      slide={false}
-    >
+    <Carousel variant="dark" indicators={false} slide={false}>
       <Carousel.Item>
         <ImageContainer src={criterio1} alt="criterio1" />
       </Carousel.Item>

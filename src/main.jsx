@@ -10,7 +10,7 @@ import { Loading } from "./components/Loading";
 import { UnicariocaLoading } from "./components/UnicariocaLoading";
 import { SobreArraial } from "./Pages/SobreArraial";
 import { QuizPage } from "./Pages/QuizPage";
-import { ColetaSeletiva } from "./Pages/ColetaSeletiva";
+import { PraiaBrava } from "./Pages/PraiaBrava";
 import { PraiaDosAnjos } from "./Pages/PraiaDosAnjos";
 import { PraiaDoForno } from "./Pages/PraiaDoForno";
 import { InteractiveQuiz } from "./Pages/InteractiveQuiz";
@@ -49,8 +49,8 @@ const router = createBrowserRouter([
     element: <QuizPage />
   },
   {
-    path: "/coleta-seletiva",
-    element: <ColetaSeletiva />
+    path: "/praia-brava",
+    element: <PraiaBrava />
   },
   {
     path: "/quiz",
