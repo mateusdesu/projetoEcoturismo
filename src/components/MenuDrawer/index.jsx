@@ -168,6 +168,36 @@ const Privacidade = (props) => {
     </Modal>
   );
 };
+const Projeto = (props) => {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Body>
+        <p>
+          O aplicativo foi um produto do curso de mestrado da UniCarioca junto
+          com a Nucap da mestranda Elga Viana Barreto Alves e que serve de base
+          para consulta de restaurantes locais da cidade de Arraial do Cabo;
+          rede hoteleira; localização de algumas praias; jogos educacionais;
+          links de vídeos sobre educação ambiental; podcast de educação
+          ambiental; placas de conscientização sobre educação ambiental;
+          histórias locais e curiosidades. O aplicativo teve como principal
+          objetivo propor uma ferramenta que possa auxiliar o turista, visitante
+          e morador na preservação e conscientização do meio ambiente, ajudando,
+          assim, a desenvolver alguns conceitos de sustentabilidade e de um
+          turismo sustentável na cidade. Podendo também servir dentro das
+          esferas educacionais: formal, informal e não formal.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Fechar</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+};
 const Responsabilidade = (props) => {
   return (
     <Modal
@@ -201,7 +231,9 @@ export const MenuDrawer = (props) => {
   const [criterioModalShow, setCriterioModalShow] = useState(false);
   const [educacaoModalShow, setEducacaoModalShow] = useState(false);
   const [privacidadeModalShow, setPrivacidadeModalShow] = useState(false);
-  const [responsabilidadeModalShow, setResponsabilidadeModalShow] = useState(false);
+  const [responsabilidadeModalShow, setResponsabilidadeModalShow] =
+    useState(false);
+  const [projetoModalShow, setProjetoModalShow] = useState(false);
 
   return (
     <Drawer open={open}>
@@ -209,6 +241,9 @@ export const MenuDrawer = (props) => {
         <FaTimesCircle size={"2em"} color="#4a4da3" />
       </CloseButton>
       <MenuList>
+        <MenuItem onClick={() => setProjetoModalShow(true)}>
+          O Projeto
+        </MenuItem>
         <MenuItem onClick={() => setOrientacaoModalShow(true)}>
           Orientações de uso das praias
         </MenuItem>
@@ -271,6 +306,10 @@ export const MenuDrawer = (props) => {
       <Responsabilidade
         show={responsabilidadeModalShow}
         onHide={() => setResponsabilidadeModalShow(false)}
+      />
+      <Projeto
+        show={projetoModalShow}
+        onHide={() => setProjetoModalShow(false)}
       />
     </Drawer>
   );
