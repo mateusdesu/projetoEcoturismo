@@ -10,7 +10,7 @@ import {
 } from "./style";
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import image from "../../assets/images/SobreAsPrainhasDoPontalDoAtalaia.jpg";
+import image from "../../assets/images/pontalDoAtalaia2.jpg";
 
 export const AsPrainhasDoPontalDoAtalaia = () => {
   const navigate = useNavigate();
